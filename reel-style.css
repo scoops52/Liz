@@ -1,0 +1,111 @@
+body {
+    background-color: #ff914d;
+}
+
+.container-fluid {
+    
+    justify-content: space-around;
+}
+
+.ratio {
+    margin-top: 50px;
+}
+
+#vid {
+    height: 70%!important
+}
+
+#links {
+    height: 30%!important
+}
+
+.link-2 {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 10px 0;
+    color: white;
+    border: .5px solid white;
+    
+}
+
+.inner-wrapper {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.wrapper-17:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: white;
+    transform: scaleY(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s;
+    
+}
+.wrapper-17:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: white;
+    transform: scaleY(0);
+    transform-origin: top right;
+    transition: transform 0.3s;
+    
+}
+.wrapper-17 .hover-17 {
+    padding: 10px;
+}
+.wrapper-17 .hover-17:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s;
+    
+}
+.wrapper-17 .hover-17:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+    
+}
+.wrapper-17:hover:before, .wrapper-17:hover:after {
+    transform: scaleY(1);
+}
+.wrapper-17:hover .hover-17:before, .wrapper-17:hover .hover-17:after {
+    transform: scaleX(1);
+}
+
+
+.link-wrapper {
+    position: relative;
+    display: block;
+    padding: 20px 0;
+}
+
+#media {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
